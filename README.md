@@ -3,10 +3,14 @@ Accountability Accounting, a prominent investment bank, is interested in offerin
 
 ## Resources
 *Data: crypto_data.csv
+
 *Software: Jupyter Notebook
 
 ## Analysis
 To begin, I removed all rows that contained null or missing values. I only kept the cryptocurrencies that were actively being traded. I then removed certain columns that were not pertinent to the analysis. I created dummy variables for the 'Algorithm' and 'ProofType' columns. Then, I used the fit_transform() function to standardize the features in the data. Using the newly created dataframe, I applied PCA to reduce the dimensions to three prinicpal components. The results of the PCA algorithm were concatenated into their own data frame (pcs_df). I then used the pcs_df dataframe to run the K-means algorithm to make predicitons of the K clusters for the cryptocurrencies' data. Finally, I created a 3D scatter plot to help visualize how the cryptocurrencies clustered in multidimensional space. 
 
 ## Results
+![3D Scatterplot](https://github.com/CSoldo1/Cryptocurrency_Analysis/blob/main/3D_scatterplot.PNG)
+
+![Mine Coin Scatterplot](https://github.com/CSoldo1/Cryptocurrency_Analysis/blob/main/mine_coin_scatter_plot.PNG)
 
